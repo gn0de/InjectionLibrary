@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{71E46032-AD6A-41BE-AA49-2711FFC9D42D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>InjectionLibrary</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InjectionLibrary\CRTInjection.cs" />
+    <Compile Include="InjectionLibrary\InjectionMethod.cs" />
+    <Compile Include="InjectionLibrary\InjectionMethodType.cs" />
+    <Compile Include="InjectionLibrary\ManualMap.cs" />
+    <Compile Include="InjectionLibrary\StandardInjectionMethod.cs" />
+    <Compile Include="InjectionLibrary\ThreadHijack.cs" />
+    <Compile Include="JLibrary.PortableExecutable\Constants.cs" />
+    <Compile Include="JLibrary.PortableExecutable\DATA_DIRECTORIES.cs" />
+    <Compile Include="JLibrary.PortableExecutable\IMAGE_BASE_RELOCATION.cs" />
+    <Compile Include="JLibrary.PortableExecutable\IMAGE_DATA_DIRECTORY.cs" />
+    <Compile Include="JLibrary.PortableExecutable\IMAGE_DOS_HEADER.cs" />
+    <Compile Include="JLibrary.PortableExecutable\IMAGE_FILE_HEADER.cs" />
+    <Compile Include="JLibrary.PortableExecutable\IMAGE_IMPORT_DESCRIPTOR.cs" />
+    <Compile Include="JLibrary.PortableExecutable\IMAGE_NT_HEADER32.cs" />
+    <Compile Include="JLibrary.PortableExecutable\IMAGE_OPTIONAL_HEADER32.cs" />
+    <Compile Include="JLibrary.PortableExecutable\IMAGE_RESOURCE_DATA_ENTRY.cs" />
+    <Compile Include="JLibrary.PortableExecutable\IMAGE_RESOURCE_DIRECTORY.cs" />
+    <Compile Include="JLibrary.PortableExecutable\IMAGE_RESOURCE_DIRECTORY_ENTRY.cs" />
+    <Compile Include="JLibrary.PortableExecutable\IMAGE_SECTION_HEADER.cs" />
+    <Compile Include="JLibrary.PortableExecutable\IMAGE_THUNK_DATA.cs" />
+    <Compile Include="JLibrary.PortableExecutable\PortableExecutable.cs" />
+    <Compile Include="JLibrary.PortableExecutable\ResourceWalker.cs" />
+    <Compile Include="JLibrary.PortableExecutable\U1.cs" />
+    <Compile Include="JLibrary.Tools\ErrorBase.cs" />
+    <Compile Include="JLibrary.Tools\MemoryIterator.cs" />
+    <Compile Include="JLibrary.Tools\UnmanagedBuffer.cs" />
+    <Compile Include="JLibrary.Tools\Utils.cs" />
+    <Compile Include="JLibrary.Win32\Win32Ptr.cs" />
+    <Compile Include="JLibrary.Win32\WinAPI.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System.Runtime.CompilerServices\ExtensionAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

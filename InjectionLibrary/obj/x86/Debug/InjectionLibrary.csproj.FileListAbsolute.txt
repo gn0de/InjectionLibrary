@@ -1,0 +1,5 @@
+C:\Users\Desutin\Downloads\InjectionLibrary\obj\x86\Debug\InjectionLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Desutin\Downloads\InjectionLibrary\bin\Debug\InjectionLibrary.dll
+C:\Users\Desutin\Downloads\InjectionLibrary\bin\Debug\InjectionLibrary.pdb
+C:\Users\Desutin\Downloads\InjectionLibrary\obj\x86\Debug\InjectionLibrary.dll
+C:\Users\Desutin\Downloads\InjectionLibrary\obj\x86\Debug\InjectionLibrary.pdb
